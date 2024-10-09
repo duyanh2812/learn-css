@@ -1,0 +1,44 @@
+<form class="user-form" (submit)="addItem()">
+  <h2 class="user-form__title">Add User</h2>
+  <div class="user-form__field">
+    <label for="name" class="user-form__label">Name</label>
+    <input
+      type="text"
+      [(ngModel)]="user.name"
+      id="name"
+      class="user-form__input"
+      name="name"
+      required
+    />
+  </div>
+  <div class="user-form__field">
+    <label for="email" class="user-form__label">Email</label>
+    <input
+      type="email"
+      [(ngModel)]="user.email"
+      id="email"
+      class="user-form__input"
+      name="email"
+      required
+    />
+  </div>
+  <div class="user-form__field">
+    <label for="address" class="user-form__label">Address</label>
+    <textarea
+      id="address"
+      [(ngModel)]="user.address"
+      class="user-form__textarea"
+      name="address"
+      required
+    ></textarea>
+  </div>
+  <button type="submit" class="user-form__submit-button">Add User</button>
+</form>
+<div *ngIf="show">
+  <app-user-detail
+    *ngFor="let user of users; let index = index"
+    [user]="user"
+    [index]="index"
+    (delete)="deleteMessage($event)"
+  ></app-user-detail>
+</div>

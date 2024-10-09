@@ -1,0 +1,89 @@
+$header-background: #4a90e2;
+$header-text-color: #ffffff;
+$main-background: #f4f4f4;
+$main-text-color: #333;
+$footer-background: #333;
+$footer-text-color: #ffffff;
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: $main-background;
+}
+
+.header {
+    background-color: $header-background;
+    color: $header-text-color;
+    padding: 20px 0;
+
+    &__title {
+        text-align: center;
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    &__nav {
+        text-align: center;
+
+        &__nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+
+            &__nav-item {
+                display: inline;
+                margin: 0 15px;
+
+                &__nav-link {
+                    color: $header-text-color;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main-content {
+    padding: 20px;
+
+    &__section {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    &__heading {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        color: $main-text-color;
+    }
+
+    &__services-list {
+        list-style: none;
+        padding: 0;
+
+        &__service-item {
+            margin: 5px 0;
+        }
+    }
+}
+
+.footer {
+    background-color: $footer-background;
+    color: $footer-text-color;
+    text-align: center;
+    padding: 15px 0;
+
+    &__text {
+        margin: 0;
+    }
+}

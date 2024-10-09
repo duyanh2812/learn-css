@@ -1,0 +1,22 @@
+.menu {
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    li {
+      margin: 0;
+      a {
+        display: block;
+        padding: 14px 20px;
+        color: white;
+        text-decoration: none;
+        &:hover {
+          background-color: #575757;
+        }
+      }
+    }
+}

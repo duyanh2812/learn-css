@@ -1,0 +1,32 @@
+{{ myCounter }}
+<ng-content style="color: rebeccapurple"></ng-content>
+<h3>
+  ngOnChange: When change value is primitive type, Cannot detech if Reference
+  type push value or change value in object<br />
+  ===========================================================<br />
+  ngDoCheck: When change value is referent type like Object, Array, because
+  ngOnChange cannot detech change for Reference Type <br />
+  ===========================================================<br />
+  ngOnInit: When the first load component, trigger only one time <br />
+  ===========================================================<br />
+  ngAfterContentInit: When content is passed from parent, this hook is run when
+  content from parent complete load. Trigger only one time.<br />
+  ===========================================================<br />
+  ngAfterContentChecked: Trigger right after ngDoCheck. Using to manipulate DOM
+  element which is passed from parent component to make change some thing.<br />
+  ===========================================================<br />
+  ngAfterViewInit: When all view, component, css, html, child are successfully
+  loaded. Using to manipulate DOM<br />
+  ===========================================================<br />
+  ngAfterViewChecked: Run every time changes, right after ngAfterViewChecked,
+  all content (components, html, css, childs) of current component are
+  successfully loaded. Using to manipulate DOM<br />
+  ===========================================================<br />
+  onDestroy: run every time we change view (ex: Using router to route to another
+  path), when component is destroyed(component is unmounted). Using to free
+  memory like settimeout, setInterval. Or we can emit an event to parent
+  component to do something. Unsubcribe API
+</h3>
+<p *ngFor="let log of changeLog">
+  {{ log }}
+</p>

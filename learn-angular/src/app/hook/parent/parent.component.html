@@ -1,0 +1,7 @@
+<button (click)="increment()">increase</button>
+<button (click)="decrement()">decrease</button>
+<button (click)="add()">add</button>
+
+<app-child [myCounter]="counter" [second]="second" [numbers]="numbers">
+  <p style="color: red">This is content which is passed from parent</p>
+</app-child>
