@@ -1,0 +1,19 @@
+body {
+  font-family: Arial;
+}
+.hello-class {
+  color: white;
+  background-color: brown;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 2px;
+}
+
+.hello-class:hover {
+  transition: opacity 0.15s;
+  opacity: 0.7;
+}
+
+.hello-class:active {
+  opacity: 0.5;
+}
